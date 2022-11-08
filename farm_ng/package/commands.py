@@ -36,7 +36,8 @@ class BuildProtosCommand(Command):
         assert package_root is not None
 
         build_package_protos(
-            proto_root=Path(proto_root), package_root=Path(package_root))
+            proto_root=Path(proto_root), package_root=Path(package_root)
+        )
 
 
 class CleanFilesCommand(Command):
