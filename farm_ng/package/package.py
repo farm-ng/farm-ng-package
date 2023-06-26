@@ -41,6 +41,7 @@ def build_package_protos(proto_root, package_root, proto_includes=[]):
             + includes
             + [
                 "--python_out={}".format(package_root),
+                "--pyi_out={}".format(package_root),
                 "--grpc_python_out={}".format(package_root),
             ]
             + [proto_file]
